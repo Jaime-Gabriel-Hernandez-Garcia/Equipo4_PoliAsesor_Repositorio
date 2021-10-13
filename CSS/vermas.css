@@ -1,0 +1,161 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url("../imagenes/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    overflow: hidden;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    float: right;
+}
+nav ul li a{
+    display: block;
+}
+
+.buscar{
+    width: 100%;
+    height: 2%;
+    font-size: 1rem;
+    font-family: 'Calibri Light';
+    border-radius:1rem;
+    padding-left: 10%;
+    vertical-align: middle;
+}
+/*
+.buscarbtn{
+    width: 30%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: 'Calibri Light';
+}*/
+.logoipn{
+    width: 35%;
+}
+.centrar{
+    width: 100%;
+    display: block;
+    padding: 1rem;
+}
+.asesoria{
+    margin: 1% 0 0 15%;
+    color: #74003E;
+    font-size: 2.5rem;
+    font-family: 'Calibri Light';
+}
+.centrar, .vermas, .descripcion, .horarios, .temas, .material, .ubicacion, .cupomax, .cupodis, .asesor{
+    margin: 0 auto;
+}
+
+.vermas{
+    width: 70%;
+    padding: 1%;
+} 
+.vermas, .descripcion, .horarios, .temas, .material, .ubicacion, .cupomax, .cupodis, .asesor, #horario input{
+    border: .15rem;
+    border-style: solid;
+    border-color: #74003E;
+    background-color: white;
+    font-family: 'Calibri Light';
+    padding: .7%;
+    margin-top: 2%;
+}
+.descripcion, .horarios, .temas, .material, .ubicacion, .cupomax, .cupodis, .asesor{
+    display: inline-block;
+    margin: 1%;
+    vertical-align: middle;
+}
+.descripcion{
+    width: 95%;
+}
+.temas, .ubicacion, .icono{
+    width: 40%;
+}
+.material{
+    width: 51%;
+}
+.cupodis, .cupomax{
+    width: 97%;
+}
+.horarios, .asesor{
+    width: 88%;
+    padding: 4%;
+}
+.titulo{
+    text-align: left; 
+    font-family: 'Calibri Light';
+    color: #74003E;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.der, .izq{
+    display: inline-block;
+}
+.der{
+    width: 29.5%;
+    vertical-align: top;
+}
+.izq{
+    width: 70%;
+}
+#descripcion, #temas, #material, #zoomid, #zoomps, #cupomax, #cupodis, #horario, #asesor, #horario input{
+    text-align: left; 
+    font-family: 'Calibri Light';
+    color: black;
+    font-size: 1.2rem;
+}
+
+#horario input{
+    text-align: center; 
+    display: block;
+    margin:0 auto ;
+    margin-top: 3%;
+    width: 98%;
+    color: #74003E;
+    padding: 1%;
+}
+#horario input:hover{
+    background-color: #74003E;
+    color: white;
+}
+.inscribir{
+    border-radius: 1rem;
+    border:solid 1px #74003E;
+    background-color: white;
+    font-family: 'Calibri Light';
+    color: #74003E;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1% 10%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.inscribir:hover{
+    background-color: #74003E;
+    color: white;
+}
+span{
+    color: #74003E;
+}
+.derizq{
+    width: 53%;
+    float: right;
+    margin-right:  2% ;
+}
