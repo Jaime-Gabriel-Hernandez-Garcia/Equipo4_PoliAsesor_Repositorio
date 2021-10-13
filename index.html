@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./CSS/EstiloIndex.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <title>Asesorías</title>
-</head>
-<body>
-        <nav>
-            <ul>
-                <li>
-                    <input type="search" name="busquedamodelos" class="buscar" placeholder="buscar">
-                    
-                </li>
-                <li>
-                    <img src="./imagenes/logo ipn.png" class="logoipn">
-                </li>
-            </ul>
-        </nav>
-        <div class="centrar">
-            <p  class="titulo">Asesorías</p>
-            <div class="asesorias">
-                <div class="der">
-                    <p id="tituloasesoria">Cálculo integral</p>
-                    <p id="nombreasesor">Jose manuel rodriguez reyes</p>
-                    <div id="temasd">
-                        <p id="temas">Temas: trigonometria, algebra, trigonometria, algebra, trigonometria, algebra, trigonometria, algebra</p>
-                    </div>
-                    <p>calificacion</p>
-                    <span class="material-icons-outlined">perm_identity</span>
-                </div>
-                <div class="izq">
-                    <div class="horarios">
-                        <p id="horario1">lunes 13:00-15:00</p>
-                        <p id="horario2">martes 15:00-16:00</p>
-                    </div>
-                    <input type="submit" value="Ver más" id="vermasbtn">
-                </div>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inicio</title>
+        <link rel="shortcut icon" href="img/logo-ipn.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link  rel="stylesheet" href="css/index.css">
+        <script>
+            document.onkeydown = function (e) {
+         
+                // disable F12 key
+                if(e.keyCode == 123) {
+                    return false;
+                }
                 
-            </div>
+         
+                // disable I key
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+                    return false;
+                }
+         
+                // disable J key
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    return false;
+                }
+         
+                // disable U key
+                if(e.ctrlKey && e.keyCode == 85) {
+                    return false;
+                }
+            }
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            </script>
+    </head>
+    <body style=" background-image: url(img/fondo.png);">
+        <ul>
+            <li>
+              <img class="ipn" src="img/logo.png">
+            </li>
+            
+            <li style="float: right;" >
+                <a href="Inicio.html">Iniciar Sesíon</a>
+            </li>
+            <li class="infoimg"  style="float: right;">
+                    <a href="info.html"><img src="img/info.png"></a>
+            </li>
+            
+        </ul>
+        <div> 
+            <img src="img/Poliasesor.png"> 
+            
         </div>
-</body>
+        <div id="2"><a class="button" href="Inicio.html">Iniciar Sesíon</a></div>
+    </body>
 </html>
