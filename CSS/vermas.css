@@ -87,8 +87,11 @@ nav ul li a{
 .temas, .ubicacion, .icono{
     width: 40%;
 }
-.material, .cupodis, .cupomax{
+.material{
     width: 51%;
+}
+.cupodis, .cupomax{
+    width: 97%;
 }
 .horarios, .asesor{
     width: 88%;
@@ -130,4 +133,29 @@ nav ul li a{
 #horario input:hover{
     background-color: #74003E;
     color: white;
+}
+.inscribir{
+    border-radius: 1rem;
+    border:solid 1px #74003E;
+    background-color: white;
+    font-family: 'Calibri Light';
+    color: #74003E;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1% 10%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.inscribir:hover{
+    background-color: #74003E;
+    color: white;
+}
+span{
+    color: #74003E;
+}
+.derizq{
+    width: 53%;
+    float: right;
+    margin-right:  2% ;
 }
