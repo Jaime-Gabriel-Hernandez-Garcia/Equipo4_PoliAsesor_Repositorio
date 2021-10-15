@@ -90,72 +90,61 @@ function prueb(){
 <div class="DescripcionAsesoria">
     <div class="Descripcion">
         <strong style="color: #74003E;">Descripción:</strong>
-        <br>
-        En esta asesoria esta dirigida a cualquier alumno que necesite apoyo
-        <br>
-        en,  los remas abordados o que quiere repasar.
+        <textarea name="descripcion" id="descripcion" cols=60" rows="2" style="height: 65%;"></textarea>
     </div>
 
     <div class="Temas">
         <strong style="color: #74003E;">Temas:</strong> 
-        <br>
-        - Integrales Indefinidas 
-        <br>
-        - Integrales Definidas
-        <br>
-        - Integrales Trigonometricas
+        <textarea name="temas" id="temas" cols="25" rows="4"></textarea>
     </div>
 
     <div class="Zoom">
         <strong style="color: #74003E;">Zoom:</strong>
-        <br>
-        ID: 553 876 6472
-        <br>
-        Contraseña: 874 828
+        <textarea name="zoom" id="zoom" cols="25" rows="2"></textarea>
     </div>
 
     <div class="materiales">
         <strong style="color: #74003E;"> Material: </strong>
-        <br>
-        Se recomienda llevar un cuaderno y un
-        <br>
-        lápiz
+        <textarea name="material" id="material" cols="31" rows="2"></textarea>
     </div>
 
     <div class="CupoMax">
         <strong style="color: #74003E;"> Cupo máximo de alumnos: </strong>
-        30
+        <input type="number" id="cupMax" size="1" max="99" min="1">
     </div>
 
     <div class="CupoDis">
         <strong style="color: #74003E;"> Cupo disponible de alumnos: </strong>
-        27
+        <input type="number" id="cupMax" size="1" max="99" min="1">
     </div>
 
     <div class="horario">
         <strong style="color: #74003E;"> Horarios Completos:  </strong>
         <br>
         <br>
-        Lunes   17:00pm   -   18:20pm
+        <input type="date" id="start"  class="calendario" name="trip-start"
+                value="2021-12-25"
+                min="2020-01-01" max="2035-01-01" 
+                style="background-color: #74003E;">
+        
         <br>
+        <br>    
+        Lunes <input type="time" style="background-color: #74003E;" id="luneshora">
         <br>
-        Martes   15:00pm   -   16:00pm
+        Martes <input type="time" style="background-color: #74003E;" id="marteshora">
         <br>
+        Miercoles <input type="time" style="background-color: #74003E;" id="miercoleshora">
         <br>
-        Miercoles   16:00pm   -   18:20pm
+        Jueves <input type="time" style="background-color: #74003E;" id="jueveshora">
         <br>
-        <br>
-        Jueves   16:00pm   -   18:20pm
-        <br>
-        <br>
-        Viernes   15:00pm   -   16:00pm
+        Viernes<input type="time" style="background-color: #74003E;" id="vierneshora">
 
     </div>
 
     <div class="asesor">
         <strong style="color: #74003E;"> Asesor: </strong>
         <br>
-        Martínez González Saul Jóse
+        <input type="text" id="nomAse" class="nomAse" size="34">
 
     </div>
 
