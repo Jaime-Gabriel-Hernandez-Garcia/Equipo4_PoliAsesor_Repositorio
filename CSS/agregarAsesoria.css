@@ -18,11 +18,16 @@ body{
   border-radius: 20px;
 }
 
+.calendario{
+    background: #74003E;
+    background-color: #74003E;
+    color: #bdb2b8;
+}
 
 .Descripcion{
     position: absolute;
     width: 48%;
-    height: 15%;
+    height: 16%;
     right: 42%;
     top: 5%;
 
