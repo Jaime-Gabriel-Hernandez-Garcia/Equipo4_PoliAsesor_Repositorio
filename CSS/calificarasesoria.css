@@ -1,0 +1,53 @@
+.ca{
+    font-family: "Calibri Light";
+    font-size: 2.5rem;
+    color: #74003E;
+    font-weight: lighter;
+    margin: 3% 15%;
+}
+.centrar{
+    background-color: white;
+    border: solid #74003E 2px ;
+    width: 65%;
+    padding: 2%;
+    padding-bottom: 0;
+}
+.izq{
+    width: 30%;
+}
+.izq i{
+    font-size: 12rem;
+    color: #74003E;
+    font-weight: lighter;
+}
+.der{
+    width: 69%;
+}
+.titulo, .t, .der input{
+    text-align: center;
+    font-family: "Calibri Light";
+}
+.titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #74003E;
+}
+.t{
+    color: black;
+    font-size: 1rem;
+    margin-top: 1%;
+}
+.der input{
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    background-color: white;
+    border: solid #74003E 1px;
+    font-size: 1.5rem;
+    color: #74003E;
+    margin: 5% .7%;
+}
+.der input:hover{
+    background-color: #74003E;
+    color: white;
+}
