@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./CSS/vermas.css" rel="stylesheet">
+    <link href="./CSS/alumnosinscritos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/principal.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-ipn.png">
+    <title>Alumnos inscritos</title>
+    <script>
+        function uncheck(){
+      var checkbox1 = document.getElementById("asesor");
+      var checkbox2 = document.getElementById("asesorado");
+      checkbox1.onclick = function(){
+      if(checkbox1.checked != false){
+         checkbox2.checked =null;
+      }
+  }
+  checkbox2.onclick = function(){
+      if(checkbox2.checked != false){
+          checkbox1.checked=null;
+      }
+    }
+  }
+          function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  
+  
+   
+  }
+  
+  
+  function prueb(){
+    window.alert("Error");
+  }
+  
+  
+      </script>
+  </head>
+  <body style=" background-image: url(img/fondo.png);">
+  <ul>
+              
+              <li> <img class="ipn" src="img/logo.png"></li>
+              <li> <input class="nav" type="search"  placeholder="Buscar"></li>
+              <button  class="butcarr" type="submit" onclick="prueb()"><img  class="butcar" src="img/buscar.png"></button>
+              
+              <div class="dropfiltro">
+                <button class="dropbtn1" onclick="myFunction1()" id="filtros"><img class="filtro" src="img/filtro.png"></button>
+              
+                
+              </div>
+              
+             
+              <li style="float: right;" >
+      <div class="dropdown" >
+          <button onclick="myFunction()" class="dropbtn">2019090388</button>
+          
+        </div>
+                
+  </li>
+  
+     <li style="float: right;margin-top: .7vw;margin-left: .4vw;margin-right: -2px;"><img src="img/prefil.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+     <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/noti.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+     <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/horario.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+     <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/misase.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+     <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/mas.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+     
+     <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/home.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+     
+  </ul>
+  <div id="myDropdown" class="dropdown-content">
+      <center><a href="perfil.html">Mi Perfil</a>
+      <a href="#">Cerrar Sesión</a></center>
+      
+    </div>
+    <div class="dropfiltro-content" id="myDropdown1">
+      <div>
+      <p class="uni"> Unidad Academica:</p><select name="UnidadAcademica">
+  
+        <option>Todos</option>
+        
+        <option>Cecyt 7</option>
+        
+        <option>Cecyt 9</option>
+        
+        </select>
+        <p class="uni"> Día:</p><select name="Dia">
+  
+          <option>Todos</option>
+          
+          <option>Lunes</option>
+          <option>Martes</option>
+          <option>Miercoles</option>
+          <option>Jueves</option>
+          <option>Viernes</option>
+          <option>Sabado</option>
+          <option>Domingos</option>
+          
+          </select>
+        <p class="hora">Hora:</p>
+        <input type="time" name="horario">
+        
+  
+        <input type="checkbox" value="Asesor" id="asesor" onclick="uncheck()"><p class="ase">Asesor</p>
+        <input type="checkbox" value="Asesor" id="asesorado" onclick="uncheck()"><p class="ase">Asesoria</p>
+      </div>
+      </div>
+      
+</head>
+<body>
+    <div class="p">
+        <p id="t">Física</p>
+        <div class="s">
+            <p class="alumnos" id="alumno1">kelly guerrero</p>
+            <i class="material-icons" onclick="del()">delete</i>
+            <p class="alumnos">pablo martinez </p>
+            <i class="material-icons" onclick="del()">delete</i>
+            <p class="alumnos">maria perez</p>
+            <i class="material-icons" onclick="del()">delete</i>
+        </div>
+        
+    </div>
+    <script src="./JS/alumnosinscritos.js"></script>
+</body>
+</html>

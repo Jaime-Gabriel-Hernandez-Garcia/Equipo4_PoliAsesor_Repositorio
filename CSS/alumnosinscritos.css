@@ -1,0 +1,34 @@
+.p{
+    width: 40%;
+    border: solid #74003E 1px ;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.s{
+    width: 70%;
+    margin: 0 auto;
+}
+#t{
+    font-family: "Calibri Light";
+    font-size: 2rem;
+    color: #74003E;
+    border-bottom: solid #74003E 1px;
+    padding: 1%;
+    text-align: center;
+}
+.alumnos{
+    font-family: "Calibri Light";
+    font-size: 1.2rem;
+    color: black;
+    border: solid #74003E 1px;
+    width: 85%;
+    margin: 2%;
+    padding: .5%;
+}
+i, .alumnos{
+    display: inline-block;
+}
+i:hover{
+    color: rgba(116, 0, 62, .8);
+}
