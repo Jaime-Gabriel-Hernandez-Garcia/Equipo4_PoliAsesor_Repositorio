@@ -60,6 +60,14 @@ body{
     background: white;
 }
 
+.txtmaterial{
+  position: absolute;
+  width: 20%;
+  height: 12%;
+  right: 70%;
+  top: 20%;
+}
+
 .materiales{
     position: absolute;
     width: 24%;

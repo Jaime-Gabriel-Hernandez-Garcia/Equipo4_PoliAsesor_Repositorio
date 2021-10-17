@@ -87,114 +87,122 @@ function prueb(){
    
 </ul>
 
-<div class="DescripcionAsesoria">
-    <div class="Descripcion">
-        <strong style="color: #74003E;">Descripción:</strong>
-        <textarea name="descripcion" id="descripcion" cols=60" rows="2" style="height: 65%;"></textarea>
-    </div>
 
-    <div class="Temas">
-        <strong style="color: #74003E;">Temas:</strong> 
-        <textarea name="temas" id="temas" cols="25" rows="4"></textarea>
-    </div>
+<form action="asesoriaCreada.html">
 
-    <div class="Zoom">
-        <strong style="color: #74003E;">Zoom:</strong>
-        <textarea name="zoom" id="zoom" cols="25" rows="2"></textarea>
-    </div>
+  <div class="DescripcionAsesoria">
+      <div class="Descripcion" name="descripcion>
+          <strong style="color: #74003E;">Descripción:</strong>
+          <textarea name="descripcion" id="descripcion" cols=60" rows="2" style="height: 65%;"></textarea>
+      </div>
 
-    <div class="materiales">
-        <strong style="color: #74003E;"> Material: </strong>
-        <textarea name="material" id="material" cols="31" rows="2"></textarea>
-    </div>
+      <div class="Temas">
+          <strong style="color: #74003E;">Temas:</strong> 
+          <textarea name="temas" id="temas" cols="25" rows="4"></textarea>
+      </div>
 
-    <div class="CupoMax">
-        <strong style="color: #74003E;"> Cupo máximo de alumnos: </strong>
-        <input type="number" id="cupMax" size="1" max="99" min="1">
-    </div>
+      <div class="Zoom">
+          <strong style="color: #74003E;">Zoom:</strong>
+          <textarea name="zoom" id="zoom" cols="25" rows="2"></textarea>
+      </div>
 
-    <div class="CupoDis">
-        <strong style="color: #74003E;"> Cupo disponible de alumnos: </strong>
-        <input type="number" id="cupMax" size="1" max="99" min="1">
-    </div>
+      <div class="materiales">
+          <strong style="color: #74003E;"> Material: </strong>
+          <textarea name="material" id="material" cols="31" rows="2"></textarea>
+      </div>
 
-    <div class="horario">
-        <strong style="color: #74003E;"> Horarios Completos:  </strong>
-        <br>
-        <br>
-        <input type="date" id="start"  class="calendario" name="trip-start"
-                value="2021-12-25"
-                min="2020-01-01" max="2035-01-01" 
-                style="background-color: #74003E;">
-        
-        <br>
-        <br>    
-        Lunes <input type="time" style="background-color: #74003E;" id="luneshora">
-        <br>
-        Martes <input type="time" style="background-color: #74003E;" id="marteshora">
-        <br>
-        Miercoles <input type="time" style="background-color: #74003E;" id="miercoleshora">
-        <br>
-        Jueves <input type="time" style="background-color: #74003E;" id="jueveshora">
-        <br>
-        Viernes<input type="time" style="background-color: #74003E;" id="vierneshora">
+      <div class="CupoMax">
+          <strong style="color: #74003E;"> Cupo máximo de alumnos: </strong>
+          <input type="number" id="cupMax" size="1" max="99" min="1">
+      </div>
 
-    </div>
+      <div class="CupoDis">
+          <strong style="color: #74003E;"> Cupo disponible de alumnos: </strong>
+          <input type="number" id="cupDis" size="1" max="99" min="1">
+      </div>
 
-    <div class="asesor">
-        <strong style="color: #74003E;"> Asesor: </strong>
-        <br>
-        <input type="text" id="nomAse" class="nomAse" size="34">
-
-    </div>
-
-    <a href="edicionAsesoria.html">
-        <input type="button" class="edicion" id="botonEdicion" value="Editar">
-    </a>
-
-</div>
-
-
-
-<div id="myDropdown" class="dropdown-content">
-    <center><a href="perfil.html">Mi Perfil</a>
-    <a href="#">Cerrar Sesión</a></center>
-    
-  </div>
-  <div class="dropfiltro-content" id="myDropdown1">
-    <div>
-      <p class="uni"> Unidad Academica:</p><select name="UnidadAcademica">
-
-      <option>Todos</option>
-      
-      <option>Cecyt 7</option>
-      
-      <option>Cecyt 9</option>
-      
-      </select>
-      <p class="uni"> Día:</p><select name="Dia">
-
-        <option>Todos</option>
-        
-        <option>Lunes</option>
-        <option>Martes</option>
-        <option>Miercoles</option>
-        <option>Jueves</option>
-        <option>Viernes</option>
-        <option>Sabado</option>
-        <option>Domingos</option>
-        
-        </select>
-      <p class="hora">Hora:</p>
-      <input type="time" name="horario">
-      
-
-      <input type="checkbox" value="Asesor" id="asesor" onclick="uncheck()"><p class="ase">Asesor</p>
-      <input type="checkbox" value="Asesor" id="asesorado" onclick="uncheck()"><p class="ase">Asesoria</p
+      <div class="horario">
+          <strong style="color: #74003E;"> Horarios Completos:  </strong>
+          <br>
+          <br>
+          <input type="date" id="start"  class="calendario" name="trip-start"
+                  value="2021-12-25"
+                  min="2020-01-01" max="2035-01-01" 
+                  style="background-color: #74003E;">
+          
+          <br>
+          <br>    
+          Lunes <input type="time" style="background-color: #74003E;" id="luneshora">
+          <br>
+          Martes <input type="time" style="background-color: #74003E;" id="marteshora">
+          <br>
+          Miercoles <input type="time" style="background-color: #74003E;" id="miercoleshora">
+          <br>
+          Jueves <input type="time" style="background-color: #74003E;" id="jueveshora">
+          <br>
+          Viernes<input type="time" style="background-color: #74003E;" id="vierneshora">
 
       </div>
 
-  </div>
+      <div class="asesor">
+          <strong style="color: #74003E;"> Asesor: </strong>
+          <br>
+          <input type="text" id="nomAse" class="nomAse" size="34">
+
+      </div>
+
+        <input type="submit" class="edicion" value="Crear">
+
+      </div>
+
+</form>
+
+
   
+
+
+
+  <div id="myDropdown" class="dropdown-content">
+      <center><a href="perfil.html">Mi Perfil</a>
+      <a href="#">Cerrar Sesión</a></center>
+      
+    </div>
+    <div class="dropfiltro-content" id="myDropdown1">
+      <div>
+        <p class="uni"> Unidad Academica:</p><select name="UnidadAcademica">
+
+        <option>Todos</option>
+        
+        <option>Cecyt 7</option>
+        
+        <option>Cecyt 9</option>
+        
+        </select>
+        <p class="uni"> Día:</p><select name="Dia">
+
+          <option>Todos</option>
+          
+          <option>Lunes</option>
+          <option>Martes</option>
+          <option>Miercoles</option>
+          <option>Jueves</option>
+          <option>Viernes</option>
+          <option>Sabado</option>
+          <option>Domingos</option>
+          
+          </select>
+        <p class="hora">Hora:</p>
+        <input type="time" name="horario">
+        
+
+        <input type="checkbox" value="Asesor" id="asesor" onclick="uncheck()"><p class="ase">Asesor</p>
+        <input type="checkbox" value="Asesor" id="asesorado" onclick="uncheck()"><p class="ase">Asesoria</p
+
+        </div>
+
+    </div>
+
+ 
 </body>
+
 </html>

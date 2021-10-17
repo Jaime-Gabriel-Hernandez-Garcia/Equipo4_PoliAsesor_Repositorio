@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/logo-ipn.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modificarAsesoria.css">
+    <title>Modificar Asesoria</title>
+    <script>
+      function uncheck(){
+    var checkbox1 = document.getElementById("asesor");
+    var checkbox2 = document.getElementById("asesorado");
+    checkbox1.onclick = function(){
+    if(checkbox1.checked != false){
+       checkbox2.checked =null;
+    }
+}
+checkbox2.onclick = function(){
+    if(checkbox2.checked != false){
+        checkbox1.checked=null;
+    }
+  }
+}
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+
+ 
+}
+
+
+function prueb(){
+  window.alert("Error");
+}
+
+
+    </script>
+</head>
+<body style=" background-image: url(img/fondo.png);">
+<ul>
+            
+            <li> <img class="ipn" src="img/logo.png"></li>
+            <li> <input class="nav" type="search"  placeholder="Buscar"></li>
+            <button  class="butcarr" type="submit" onclick="prueb()"><img  class="butcar" src="img/buscar.png"></button>
+            
+            <div class="dropfiltro">
+              <button class="dropbtn1" onclick="myFunction1()" id="filtros"><img class="filtro" src="img/filtro.png"></button>
+            
+              
+            </div>
+            
+           
+            <li style="float: right;" >
+    <div class="dropdown" >
+        <button onclick="myFunction()" class="dropbtn">2019090388</button>
+        
+      </div>
+              
+</li>
+
+   <li style="float: right;margin-top: .7vw;margin-left: .4vw;margin-right: -2px;"><img src="img/prefil.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+   <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/noti.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+   <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/horario.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+   <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/misase.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+   <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/mas.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+   
+   <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><img src="img/home.png" width="40" height="40" style="display: inline-flex" alt=""/></li>
+   
+</ul>
+
+<div class="DescripcionAsesoria">
+    <div class="Descripcion">
+        <strong style="color: #74003E;">Descripción:</strong>
+
+        <p id="descripcionCreado"></p>
+    </div>
+
+    <div class="Temas" >
+        <strong style="color: #74003E;">Temas:</strong> 
+        <p id="temas"></p>
+    </div>
+
+    <div class="Zoom" id="aula">
+        <strong style="color: #74003E;">Zoom:</strong>
+        <p id="aulas"></p>
+    </div>
+
+    <div class="materiales" id="material">
+        <strong style="color: #74003E;"> Material: </strong>
+        <p id="materiales"  class="txtmaterial"></p>
+    </div>
+
+    <div class="CupoMax" id="cupoMax">
+        <strong style="color: #74003E;"> Cupo máximo de alumnos: </strong>
+    </div>
+
+    <div class="CupoDis" id="cupoDis">
+        <strong style="color: #74003E;"> Cupo disponible de alumnos: </strong>
+    </div>
+
+    <div class="horario" id="horario">
+        <strong style="color: #74003E;"> Horarios Completos:  </strong>
+        <br>
+        <br>
+        Lunes <div id="horlun"></div>
+        <br>
+        <br>
+        Martes   <div id="hormar"></div>
+        <br>
+        <br>
+        Miercoles   <div id="hormie"></div>
+        <br>
+        <br>
+        Jueves   <div id="horjue"></div>
+        <br>
+        <br>
+        Viernes   <div id="horvie"></div>
+    </div>
+
+    <div class="asesor" id="asesor">
+        <strong style="color: #74003E;"> Asesor: </strong>
+
+    </div>
+
+
+
+</div>
+
+
+
+<div id="myDropdown" class="dropdown-content">
+    <center><a href="perfil.html">Mi Perfil</a>
+    <a href="#">Cerrar Sesión</a></center>
+    
+  </div>
+  <div class="dropfiltro-content" id="myDropdown1">
+    <div>
+      <p class="uni"> Unidad Academica:</p><select name="UnidadAcademica">
+
+      <option>Todos</option>
+      
+      <option>Cecyt 7</option>
+      
+      <option>Cecyt 9</option>
+      
+      </select>
+      <p class="uni"> Día:</p><select name="Dia">
+
+        <option>Todos</option>
+        
+        <option>Lunes</option>
+        <option>Martes</option>
+        <option>Miercoles</option>
+        <option>Jueves</option>
+        <option>Viernes</option>
+        <option>Sabado</option>
+        <option>Domingos</option>
+        
+        </select>
+      <p class="hora">Hora:</p>
+      <input type="time" name="horario">
+      
+
+      <input type="checkbox" value="Asesor" id="asesor" onclick="uncheck()"><p class="ase">Asesor</p>
+      <input type="checkbox" value="Asesor" id="asesorado" onclick="uncheck()"><p class="ase">Asesoria</p
+
+      </div>
+
+  </div>
+
+  <script src="JS/agregarAsesoria.js"></script>
+  
+</body>
+</html>
