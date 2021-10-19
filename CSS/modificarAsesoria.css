@@ -116,6 +116,14 @@ body{
     background: white;
 }
 
+.txtmaterial{
+  position: absolute;
+    width: 80%;
+    height: 8%;
+    right: 15%;
+    top: 20%;
+}
+
 .edicion{
     position: absolute;
     font-size: 5mm;
