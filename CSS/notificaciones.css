@@ -4,157 +4,6 @@ body{
     margin-top: 0;
     margin-left: 0;
 }
-
-
-.DescripcionAsesoria{
-  position: absolute;
-  width : 80%;
-  height: 70%;
-  right: 10%;
-  top: 25%;
-  
-  border: 2px solid #74003E;
-  background: white;
-  border-radius: 20px;
-}
-
-
-.Descripcion{
-    position: absolute;
-    width: 48%;
-    height: 15%;
-    right: 42%;
-    top: 5%;
-
-    padding: 1%;
-    border: 2px solid #74003E;
-    background: white;
-}
-
-.Temas{
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    right: 70%;
-    top: 30%;
-
-    padding: 1%;
-    border: 2px solid #74003E;
-    background: white;
-}
-
-.Zoom{
-    position: absolute;
-    width: 20%;
-    height: 12%;
-    right: 70%;
-    top: 60%;
-
-    padding: 1%;
-    border: 2px solid #74003E;
-    background: white;
-}
-
-.materiales{
-    position: absolute;
-    width: 24%;
-    height: 12%;
-    right: 42%;
-    top: 30%;
-
-    padding: 1%;
-    border: 2px solid #74003E;
-    background: white;
-}
-
-.CupoMax{
-    position: absolute;
-    width: 24%;
-    height: 8%;
-    right: 42%;
-    top: 50%;
-
-    padding: 1%;
-    border: 2px solid #74003E;
-    background: white;
-}
-
-.CupoDis{
-    position: absolute;
-    width: 24%;
-    height: 8%;
-    right: 42%;
-    top: 65%;
-
-    padding: 1%;
-    border: 2px solid #74003E;
-    background: white;
-}
-
-.horario{
-    position: absolute;
-    text-align: center;
-    width: 28%;
-    height: 50%;
-    right: 8%;
-    top: 5%;
-
-    padding: 1%;
-    border: 2px solid #74003E;
-    background: white;
-}
-
-.asesor{
-    position: absolute;
-    width: 28%;
-    height: 8%;
-    right: 8%;
-    top: 65%;
-
-    padding: 1%;
-    border: 2px solid #74003E;
-    background: white;
-}
-
-.txtmaterial{
-  position: absolute;
-    width: 80%;
-    height: 8%;
-    right: 15%;
-    top: 20%;
-}
-
-.txtmaterial{
-  position: absolute;
-    width: 80%;
-    height: 8%;
-    right: 15%;
-    top: 20%;
-}
-
-
-.edicion{
-    position: absolute;
-    font-size: 5mm;
-    color: white;
-    text-align: center;
-    width: 15%;
-    height: 8%;
-    right: 45%;
-    top: 85%;
-
-    padding: 0.5%;
-    border-radius: 15px;
-    border: 2px solid #74003E;
-    background: #74003E;
-}
-
-.edicion:hover{
-    background: white;
-    color: black;
-}
-
-
 .ipn{
     margin-top: 1px;
     margin-left: .5vw;
@@ -403,7 +252,6 @@ body{
       margin-bottom: 1vw;
       margin-right: .3vw;
     }
-
     .hora{
       color: white;
       font-family: 'Roboto';
@@ -413,3 +261,126 @@ body{
       margin-bottom: 1vw;
       margin-right: .3vw;
     }
+
+.titulo{
+    
+    position: absolute;
+    height: 10%;
+    left: 15%;
+    top: 12%;
+    
+    font-family: 'Calibri light';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    
+    color: #74003E;
+}
+
+.notificacion1{
+    position: absolute;
+    width: 65%;
+    height: 32%;
+    left: 15%;
+    top: 28%;
+
+    border-radius: 20px;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.notificacion2{
+    position: absolute;
+    width: 65%;
+    height: 32%;
+    left: 15%;
+    top: 65%;
+
+    border-radius: 20px;
+    border: 2px solid #74003E;
+    background: white;
+}
+/*
+.imgnoti1{
+
+    position: absolute;
+    width: 8%;
+    height: 32%;
+    left: 3%;
+    top: 5%;
+
+    
+    border: 2px solid #74003E;
+    border-radius: 95%;
+    
+
+}
+*/
+
+.bolnoti1{
+    position: absolute;
+    height: 32%;
+    left: 5%;
+    font-size: 8mm;
+    color: #74003E;
+    font-family: 'Calibri light';
+}
+
+.horanoti1{
+    position: absolute;
+    height: 32%;
+    left: 85%;
+    font-size: 8mm;
+    color: #74003E;
+    font-family: 'Calibri light';
+}
+
+.horanoti2{
+    position: absolute;
+    height: 32%;
+    left: 78%;
+    font-size: 8mm;
+    color: #74003E;
+    font-family: 'Calibri light';
+}
+
+.noti1titulo{
+
+    position: absolute;
+    height: 32%;
+    left: 5%;
+    top: 38%;
+    font-size: 10mm;
+    color: black;
+    font-family: 'Calibri light';
+}
+
+.botonnoti1{
+
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    left: 95%;
+    top: 85%;
+    font-size: 5mm;
+    background: #74003E;
+    border-radius: 20px;
+    color: white;
+    border: 0;
+
+}
+
+.botonnoti2{
+
+    position: absolute;
+    width: 32%;
+    height: 62%;
+    left: 145%;
+    top: 85%;
+    font-size: 5mm;
+    background: #74003E;
+    border-radius: 20px;
+    color: white;
+    border: 0;
+
+}
