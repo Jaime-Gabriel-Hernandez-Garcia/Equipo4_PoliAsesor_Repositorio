@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/perfil.css">
-    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>perfil</title>
 </head>
 <body  style=" background-image: url(img/fondo.png);">
     <ul>
@@ -25,9 +26,48 @@
 
 </ul>
 <center><div class="perfildiv">
+    
+<br><img style="width: 15%;" src="img/user (1).png" onclick="window.open(this.src)">
+<div class="botonesPer">
+    <form class="formPerfil">
+        <span class="text-nomb"><b>Nombre:</b></span>
+		<input type="text" readonly placeholder="Hernández García Jaime Gabriel">
+	
+        <hr width="300" color="74003E">
+        <br>
+        <span class="text-bol"><b>Boleta:</b></span>
+		<input type="text" readonly placeholder="2020090776">
+		
+        <hr width="300" color="74003E">
+        <br>
+        <span class="text-ContraUsu"><b>Contraseña:</b></span>
+		<input type="password" id="ConUsu" readonly placeholder="22Mayo2004">
+        
 
-<br><img style="width: 15%;" src="img/user (1).png">
+        <img style="width: 30px;" src="img/ver (1).png" onclick="ver()" id="cont">
+		
 
+        <hr width="300" color="74003E">
+        <br>
+        <b>Tipo de usuario:</b>
+		<input type="text" id="tipoUsu" class="texto" readonly  placeholder="Asesorado"> 
+	
+        <hr width="300" color="74003E">
+        <br>
+	</form>
+    <script> 
+        function ver() {
+        var x = document.getElementById("conUsu");
+        if (x.type === "password") {
+             x.type = "text";
+                 } else {
+                x.type = "password";
+                     }
+                        }
+
+        </script>
+</div>
+<a href="ModificarPerfil.html"><img style="width: 60%;" src="imagenes/cambiarcontraseña.png"></a>
 </div></center>
 </body>
 </html>
