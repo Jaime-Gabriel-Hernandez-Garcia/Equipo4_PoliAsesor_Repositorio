@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/logo-ipn.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modificarAsesoria.css">
+    
+    
+    
+    <title>Crear Asesoria</title>
+
+</head>
+
+<body style=" background-image: url(img/fondo.png);">
+    <ul>
+
+        <li> <img class="ipn" src="img/logo.png"></li>
+
+
+
+
+        <li style="float: right;">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">2019090388</button>
+
+            </div>
+
+        </li>
+
+        <li style="float: right;margin-top: .7vw;margin-left: .4vw;margin-right: -2px;"><img src="img/prefil.png"
+                width="40" height="40" style="display: inline-flex" alt="" /></li>
+        <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><a href="crearasesoria.html"
+                style="padding: 0;"><img src="img/noti.png" width="40" height="40" style="display: inline-flex"
+                    alt="" /></a></li>
+        <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><a href="crearasesoria.html"
+                style="padding: 0;"><img src="img/horario.png" width="40" height="40" style="display: inline-flex"
+                    alt="" /></a></li>
+        <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><a href="misasesorias.html"
+                style="padding: 0;"><img src="img/misase.png" width="40" height="40" style="display: inline-flex"
+                    alt="" /></a></li>
+        <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><a href="crearasesoria.html"
+                style="padding: 0;"><img src="img/masblaco.png" width="40" height="40" style="display: inline-flex"
+                    alt="" /></a></li>
+
+        <li style="float: right;margin-top: .7vw;margin-left: .4vw;"><a href="asesorpri.html" style="padding: 0;"><img
+                    src="img/homeblaco.png" width="40" height="40" style="display: inline-flex" alt="" /></a></li>
+        <li style="float: right;margin-top: .4vw;display: flex; justify-content: center; width: 37.5%;"><img
+                 src="img/3 (2).png"></li>
+    </ul>
+    <form method="Post">
+        
+        <div class="DescripcionAsesoria">
+            <div class="Nombre">
+                <strong style="color: #74003E;">Nombre:</strong>
+                <input type="text" name="nombre" required id="nombre" class="nombrein" placeholder="Calculo Integral" cols="60" rows="2" style="height: 65%; "
+                    onkeypress="masmenos()" autocomplete="off"></textarea>
+            </div>
+
+            <div class="Descripcion">
+                <strong style="color: #74003E;">Descripción:</strong>
+                <textarea name="descripcion" required class="descripcion" id="descripcion" placeholder="En esta Asesoria solo se resolveran dudas (mas no se dara la teoria) con respecto a los temas inidcados." cols="60" rows="2" style="height: 65%; "
+                    onkeypress="masmenos()"></textarea>
+            </div>
+
+            <div class="Temas">
+                <strong style="color: #74003E;">Temas:</strong>
+                <textarea name="temas" required id="temas" cols="25" rows="4" placeholder="Integrales Indefinidas, Cambio de variable, Sustitucion Trigonometrica" onkeypress="masmenos()"></textarea>
+            </div>
+
+            <div class="Zoom">
+                <strong style="color: #74003E;">ID y contraseña Aula:</strong>
+                <textarea name="zoom" required id="zoom" cols="25" rows="2" placeholder="Zoom: 8884 965 643 &nbsp; &nbsp;&nbsp; ID:2965df84"  onkeypress="masmenos()"></textarea>
+            </div>
+
+            <div class="materiales">
+                <strong style="color: #74003E;"> Material: </strong>
+                <textarea name="material" required id="material" cols="31" rows="2" placeholder="Calculadora Cientifica, Cuaderno" onkeypress="masmenos()"></textarea>
+            </div>
+
+            <div class="CupoMax">
+                <strong style="color: #74003E;"> Cupo máximo de alumnos: </strong>
+                <input type="number" required id="cupMax" size="1" max="99" value="1" min="1" onkeypress="return (event.charCode == 00);">
+            </div>
+
+            <div class="CupoDis">
+                <strong style="color: #74003E;"> Cupo disponible de alumnos: </strong>
+                <input type="number" required id="CupoDis" size="1" max="99" min="1" value="1" readonly >
+            </div>
+
+            <div class="horario">
+                <strong style="color: #74003E;" > Horarios Completos: </strong>
+                <br>
+                <br>
+
+
+                Lunes: <input type="time" style="background-color: #74003E;" id="luneshora">
+                <br>
+                Martes: <input type="time" style="background-color: #74003E;" id="marteshora">
+                <br>
+                Miercoles: <input type="time" style="background-color: #74003E;" id="miercoleshora">
+                <br>
+                Jueves: <input type="time" style="background-color: #74003E;" id="jueveshora">
+                <br>
+                Viernes: <input type="time" style="background-color: #74003E;" id="vierneshora">
+                <br>
+                Sabado: <input type="time" style="background-color: #74003E;" id="sabhora">
+                <br>
+                Domingo: <input type="time" style="background-color: #74003E;" id="domhora">
+
+            </div>
+
+           
+
+            
+            <input type="button" onclick="error()" class="edicion" id="botonEdicion" value="Crear">
+            <input type="reset" class="borrar" id="botonborrar" value="Cancelar">
+
+           
+            
+    </form>
+    </div>
+
+
+
+    <div id="myDropdown" class="dropdown-content">
+        <center><a href="perfil.html">Mi Perfil</a>
+            <a href="Inicio.html">Cerrar Sesión</a>
+        </center>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="js/AgregarAsesoria.js"></script>
+</body>
+
+</html>

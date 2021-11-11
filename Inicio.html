@@ -8,32 +8,42 @@
     <link rel="stylesheet" href="css/inicio.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
-        
-            document.onkeydown = function (e) {
 
-                // disable F12 key
-                if (e.keyCode == 123) {
-                    return false;
-                }
+        document.onkeydown = function (e) {
 
-
-                // disable I key
-                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-                    return false;
-                }
-
-                // disable J key
-                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                    return false;
-                }
-
-                // disable U key
-                if (e.ctrlKey && e.keyCode == 85) {
-                    return false;
-                }
+            // disable F12 key
+            if (e.keyCode == 123) {
+                return false;
             }
-            window.onload = function () {
-            var myInput = document.getElementById('bloquear');
+
+
+            // disable I key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // disable J key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                return false;
+            }
+
+            // disable U key
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+        window.onload = function () {
+            var myInput = document.getElementById('usu');
+            myInput.onpaste = function (e) {
+                e.preventDefault();
+
+            };
+
+            myInput.oncopy = function (e) {
+                e.preventDefault();
+
+            };
+            var myInput = document.getElementById('pass');
             myInput.onpaste = function (e) {
                 e.preventDefault();
 
@@ -44,20 +54,23 @@
 
             };
         }
-            function verpas() {
-                var x = document.getElementById("pass");
-                var img = document.getElementById("icon");
-                if (x.type === "password") {
-                    x.type = "text";
-                    img.src = "img/ver (1).png"
+        function verpas() {
+            var x = document.getElementById("pass");
+            var img = document.getElementById("icon");
+            if (x.type === "password") {
+                x.type = "text";
+                img.src = "img/ver (1).png"
 
-                } else {
-                    x.type = "password";
-                    img.src = "img/ver.png"
-                }
+            } else {
+                x.type = "password";
+                img.src = "img/ver.png"
             }
+        }
 
-            document.addEventListener('contextmenu', event => event.preventDefault());
+      
+
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
 </head>
 
@@ -77,7 +90,7 @@
     </ul>
     <div class="inicio">
         <center><img class="poliasesor" src="img/Poliasesor.png">
-            <form name="formulario" method="post" >
+            <form name="formulario" method="post" action="asesorpri.html">
 
 
 
@@ -99,13 +112,13 @@
                 <div class="g-recaptcha" name="captcha" data-sitekey="6LebTMUcAAAAACL1I8MxkfYOuHisI1-XwqQPg8k7"></div>
                 <br>
                 <a href="index.html"><input type="button" value="Cancelar" class="button"></a>
-                <a href="asesorpri.html"><input type="button" value="Iniciar Sesion" class="button"></a>
+                <input type="submit" value="Iniciar Sesion" class="button">
                 <br>
                 <br>
             </form>
         </center>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

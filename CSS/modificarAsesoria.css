@@ -1,13 +1,182 @@
 body{
     width: 100%;
-    
+    overflow: hidden;
     margin-top: 0;
     margin-left: 0;
+   
 }
+*{
+  font-family: 'Roboto';
+}
+
+
+
+.DescripcionAsesoria{
+  position: absolute;
+  width : 80%;
+  height: 80%;
+  right: 10%;
+  top: 15%;
+  
+  border: 2px solid #74003E;
+  background: white;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+
+.Descripcion{
+    position: absolute;
+    width: 47%;
+    height: 15%;
+    right: 43%;
+    top: 18.5%;
+
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+
+.Nombre{
+ 
+    position: absolute;
+    width: 47%;
+    height: fit-content;
+    right: 43%;
+    top: 3%;
+
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+.nombrein{
+  width: 95%;
+ 
+  font-family: 'Roboto';
+}
+
+
+.Temas{
+    position: absolute;
+    width: 20%;
+    height: fit-content;
+    right: 70%;
+    top: 40%;
+
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.Zoom{
+    position: absolute;
+    width: 20%;
+    height: fit-content;
+    right: 70%;
+    top: 68%;
+
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.materiales{
+    position: absolute;
+    width: 25.5%;
+    height: fit-content;
+    right: 40.5%;
+    top: 40%;
+
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.CupoMax{
+    position: absolute;
+    width: 25.5%;
+    height: fit-content;
+    right: 40.5%;
+    top: 60%;
+
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.CupoDis{
+    position: absolute;
+    width: 25.5%;
+    height: fit-content;
+    right: 40.5%;
+    top: 75%;
+
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.horario{
+    position: absolute;
+    text-align: center;
+    width: 28%;
+    height: 47%;
+    right: 8%;
+    top: 5%;
+
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+
+
+.edicion{
+    position: absolute;
+    font-size: 5mm;
+    color: white;
+    text-align: center;
+    width: 15%;
+    height: 8%;
+    right: 23%;
+    top: 69%;
+
+    padding: 0.5%;
+    border-radius: 15px;
+    border: 2px solid #74003E;
+    background: #74003E;
+}
+.borrar{
+  position: absolute;
+  font-size: 5mm;
+  color: white;
+  text-align: center;
+  width: 15%;
+  height: 8%;
+  right: 5%;
+  top: 69%;
+
+  padding: 0.5%;
+  border-radius: 15px;
+  border: 2px solid #74003E;
+  background: #74003E;
+}
+
+.edicion:hover{
+    background: white;
+    color: black;
+}
+.borrar:hover{
+  background: white;
+  color: black;
+}
+
+
+
 .ipn{
     margin-top: 1px;
     margin-left: .5vw;
-    width: 40px;
    }
    .dropbtn {
     background-color: #cbdae400;
@@ -20,9 +189,6 @@ body{
   }
   .dropbtn:hover{
     color: #74003E;
-  }
-  *{
-    font-family: 'Roboto';
   }
 
   .dropbtn1 {
@@ -75,7 +241,6 @@ body{
     display: inline-block;
     z-index: 5;
   }
- 
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
@@ -84,7 +249,7 @@ body{
     background-color: hsla(0, 0%, 0%, 0.72);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
+    z-index: 2;
     
   }
   
@@ -99,8 +264,8 @@ body{
   }
   .butcar{
    
-    width:72%;
-    
+    width: 57%;
+     
    }
   .butcarr{
     background-color: rgba(0, 0, 0, 0);
@@ -108,52 +273,18 @@ body{
     border-left: 0;
     border-right: white 1px solid;
     border-bottom:  white 1px solid;
-    margin-top: 14px;
-  margin-left: 6vw;
+   margin-top: 1.5vw;
+  margin-left: -1.2vw;
   border-bottom-right-radius: 70px;
   border-top-right-radius: 70px;
   
 
   }
-
-  .titulo{
-    font-family: 'Roboto';
-    align-self: center;
-   
-    color: #74003E;
-    font-size: 60px ;
-    line-height: 75px;
-    font-weight: 300;
-    margin-top: 20px;
-    z-index: -1;
-    
-    top: 9%;
-    margin-left: 39%;
-  }
   
  
  .filtro{
-  width:100%;
-  margin-left: -17px;
-  
-  padding: 0;
- }
-
- .asesorias{
-  margin-left: 14.3%;
-  
-
-  width: 71.2%;
-  height: 250px;
-  display: inline-block;
-  
-  background: #FFFFFF;
-  border: 2px solid #74003E;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 3.5px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-  margin-bottom: 20px;
-  
+  width: 120%;
+  margin-left: -1.5vw;
  }
 
 
@@ -165,24 +296,22 @@ body{
     outline: white;
   }
   .butcarr:hover{
-    background-color: rgba(0, 0, 0, 0.337);
+    background-color: rgba(0, 0, 0, 0.767);
   }
   .nav{
     display: inline-flex;
     margin-left: 1vw;
     border-top-left-radius: 70px;
     border-bottom-left-radius: 70px;
-    padding: 7px;
+    padding: 4px;
     background-color: rgba(0, 0, 0, 0);
     border: white 1px solid;
     font-family: 'Roboto';
     color: white;
     margin-right: 16px;
     font-size: 17px;
-    margin-top: 14px;
+    margin-top: 1.5vw;
     border-right: 0;
-    width: 130%;
-    
     
   }
   .nav:focus{
@@ -195,40 +324,39 @@ body{
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
    
-   ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 2px;
-       overflow: hidden;
-       background-color:rgba(0, 0, 0, 0.72);
-       position: relative;
-       top: 0;
-       
-       font-size:20px;
-     }
-     
-     li {
-       float: left;
-     
-     }
-     
-     li a {
-       display: block;
-       color: white;
-       text-align: center;
-       padding: 14px 14px;
-       position: relative;
-       text-decoration: none;
-       padding-top: 17%;
-       padding-bottom: 0px;
-       font-size: 17px;
-       font-family: 'Roboto';
-     }
-     
-     li a:hover {
-       
-       color: #74003E;
-     }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.72);
+   
+    top: 0;
+    
+    font-size:3.5vh;
+  }
+  
+  li {
+    float: left;
+  
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    padding-top: 17%;
+    padding-bottom: 0px;
+    font-size: 17px;
+    font-family: 'Roboto';
+  }
+  
+  li a:hover {
+    
+    color: #74003E;
+  }
      
      select{
        background-color:rgba(0, 0, 0, 0);
@@ -242,7 +370,6 @@ body{
      option{
        background-color: rgba(0, 0, 0, 0.72);
      }
-     
      
      
 
@@ -278,12 +405,32 @@ body{
      input[type=time]:focus{
        outline: none;
      }
-     input[type=date]:focus{
-      outline: none;
-    }
+     
     ::-webkit-calendar-picker-indicator {
       filter: invert(1);
   }
+  textarea{
+    border: 1;
+    width: 97%;
+    resize: none;
+    font-size: 'Roboto';
+    
+  }
+  input[type=text]{
+    font-family: 'Roboto';
+    font-size: 16px;
+    width: 95%;
+  }
+  input[type=text]:focus{
+    outline: none;
+  }
+  textarea:focus{
+    outline: none;
+  }
+  input[type=number]:focus{
+    outline: none;
+  }
+  
   
 
      .ase{
@@ -295,6 +442,7 @@ body{
       margin-bottom: 1vw;
       margin-right: .3vw;
     }
+
     .hora{
       color: white;
       font-family: 'Roboto';
@@ -303,33 +451,4 @@ body{
       margin-left: 1vw;
       margin-bottom: 1vw;
       margin-right: .3vw;
-    }
-
-    .container::-webkit-scrollbar {
-      width: 8px;
-    }
-    
-    
-    .container::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, 0.72);
-    
-    }
-    
-    .container::-webkit-scrollbar-thumb:active {
-      background-color: rgba(0, 0, 0, 0.85);
-    }
-    
-    .container::-webkit-scrollbar-thumb:hover {
-      background:  #4f002a;
-     
-    }
-    
-    .container::-webkit-scrollbar-track {
-      background: rgba(0, 0, 0, 0.85);
-      
-    }
-    
-    .container::-webkit-scrollbar-track:hover, 
-    .container::-webkit-scrollbar-track:active {
-      background: rgba(0, 0, 0, 0.85);
     }

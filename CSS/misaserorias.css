@@ -7,7 +7,7 @@ body{
 .ipn{
     margin-top: 1px;
     margin-left: .5vw;
-    width: 40px;
+    width:40px;
    }
    .dropbtn {
     background-color: #cbdae400;
@@ -75,7 +75,6 @@ body{
     display: inline-block;
     z-index: 5;
   }
- 
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
@@ -84,7 +83,7 @@ body{
     background-color: hsla(0, 0%, 0%, 0.72);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
+    z-index: 5;
     
   }
   
@@ -99,8 +98,8 @@ body{
   }
   .butcar{
    
-    width:72%;
-    
+    width: 2.1vw;
+     
    }
   .butcarr{
     background-color: rgba(0, 0, 0, 0);
@@ -108,52 +107,18 @@ body{
     border-left: 0;
     border-right: white 1px solid;
     border-bottom:  white 1px solid;
-    margin-top: 14px;
-  margin-left: 6vw;
+   margin-top: 1.5vw;
+  margin-left: -1.5vw;
   border-bottom-right-radius: 70px;
   border-top-right-radius: 70px;
   
 
   }
-
-  .titulo{
-    font-family: 'Roboto';
-    align-self: center;
-   
-    color: #74003E;
-    font-size: 60px ;
-    line-height: 75px;
-    font-weight: 300;
-    margin-top: 20px;
-    z-index: -1;
-    
-    top: 9%;
-    margin-left: 39%;
-  }
   
  
  .filtro{
-  width:100%;
-  margin-left: -17px;
-  
-  padding: 0;
- }
-
- .asesorias{
-  margin-left: 14.3%;
-  
-
-  width: 71.2%;
-  height: 250px;
-  display: inline-block;
-  
-  background: #FFFFFF;
-  border: 2px solid #74003E;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 3.5px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-  margin-bottom: 20px;
-  
+  width: 2vw;
+  margin-left: -1.4vw;
  }
 
 
@@ -165,24 +130,22 @@ body{
     outline: white;
   }
   .butcarr:hover{
-    background-color: rgba(0, 0, 0, 0.337);
+    background-color: rgba(0, 0, 0, 0.767);
   }
   .nav{
     display: inline-flex;
     margin-left: 1vw;
     border-top-left-radius: 70px;
     border-bottom-left-radius: 70px;
-    padding: 7px;
+    padding: .5vw;
     background-color: rgba(0, 0, 0, 0);
     border: white 1px solid;
     font-family: 'Roboto';
     color: white;
     margin-right: 16px;
-    font-size: 17px;
-    margin-top: 14px;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
     border-right: 0;
-    width: 130%;
-    
     
   }
   .nav:focus{
@@ -201,10 +164,10 @@ body{
        padding: 2px;
        overflow: hidden;
        background-color:rgba(0, 0, 0, 0.72);
-       position: relative;
+      
        top: 0;
        
-       font-size:20px;
+       font-size:3.5vh;
      }
      
      li {
@@ -217,7 +180,6 @@ body{
        color: white;
        text-align: center;
        padding: 14px 14px;
-       position: relative;
        text-decoration: none;
        padding-top: 17%;
        padding-bottom: 0px;
@@ -304,7 +266,6 @@ body{
       margin-bottom: 1vw;
       margin-right: .3vw;
     }
-
     .container::-webkit-scrollbar {
       width: 8px;
     }
