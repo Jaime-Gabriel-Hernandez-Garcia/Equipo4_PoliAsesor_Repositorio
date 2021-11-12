@@ -8,6 +8,7 @@
     <script src="jquery-3.5.1.min.js"></script>
     <title>perfil</title>
 </head>
+
 <body  style=" background-image: url(img/fondo.png);">
     <ul>
             
@@ -39,12 +40,12 @@
 		<input type="text" readonly placeholder="2020090776">
 		
         <hr width="300" color="74003E">
-        <br>
+        
         <span class="text-ContraUsu"><b>Contraseña:</b></span>
-		<input type="password" id="ConUsu" readonly placeholder="22Mayo2004">
+		<input type="password" id="ConUsu" readonly placeholder="22Mayo2004" border:none;>
         
 
-        <img style="width: 30px;" src="img/ver (1).png" onclick="ver()" id="cont">
+        <img style="width: 7%;" id="icon" src="img/ver.png" onclick="verpas()" >
 		
 
         <hr width="300" color="74003E">
@@ -55,22 +56,35 @@
         <hr width="300" color="74003E">
 
         <br>
+        <input type="text" id="AgreCont" class="texto" placeholder="contacto nuevo">
+        <a href="perfil.html"><input type="button" value="Agregar contacto" class="button"></a>
+        <br>
+        <br>
 	</form>
-    <script> 
-        function ver() {
-        var x = document.getElementById("conUsu");
-        if (x.type === "password") {
-             x.type = "text";
-                 } else {
-                x.type = "password";
-                     }
-                        }
 
+
+    
+ 
+        <a href="ModificarPerfil.html"><input type="button" value="Modificar contraseña" class="button"></a>
+
+
+    <script> 
+                        function verpas() {
+                var x = document.getElementById("ConUsu");
+                var img = document.getElementById("icon");
+                if (x.type === "password") {
+                    x.type = "text";
+                    img.src = "img/ver (1).png"
+
+                } else {
+                    x.type = "password";
+                    img.src = "img/ver.png"
+                }
+                        }
         </script>
 </div>
-<a href="ModificarPerfil.html"><img style="width: 60%;" src="imagenes/cambiarcontraseña.png"></a>
+
 <br>
-<a><img style="width: 30%;" src="imagenes/agregarcont.png"></a>
-</div></center>
+
 </body>
 </html>
